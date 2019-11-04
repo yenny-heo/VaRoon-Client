@@ -31,7 +31,7 @@ public class Login extends JFrame{
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setIconImage(new ImageIcon("Image/icon.png").getImage());
-
+        setLocationRelativeTo(null);
 
         //panel
         JPanel jPanel = new JPanel();
