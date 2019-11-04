@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec99fe1-4d6c-4393-b8c0-47652b556c26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/fruitcutting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +89,7 @@
       <workItem from="1572776192942" duration="139000" />
       <workItem from="1572776525390" duration="13450000" />
       <workItem from="1572797699032" duration="24000" />
-      <workItem from="1572797735411" duration="11430000" />
+      <workItem from="1572797735411" duration="11714000" />
     </task>
     <servers />
   </component>
