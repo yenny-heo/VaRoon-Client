@@ -21,7 +21,7 @@ import org.json.simple.parser.JSONParser;
 public class Login extends JFrame{
     private Controller controller;
     public static void main(String args[]) {
-
+        new Login();
     }
 
     public Login(){
@@ -30,7 +30,7 @@ public class Login extends JFrame{
         setSize(1300, 731);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
+        setIconImage(new ImageIcon("Image/icon.png").getImage());
 
 
         //panel
@@ -56,6 +56,8 @@ public class Login extends JFrame{
         JPasswordField pwField = new JPasswordField(10);
         pwField.setMaximumSize(idField.getPreferredSize());
         JButton loginButton = new JButton("로그인");
+        JLabel loginbtnColor = new JLabel("");
+        JButton signupButton = new JButton("회원가입");
 
         //set position & size
         background.setBounds(-1,-1,1300,731);
@@ -67,17 +69,25 @@ public class Login extends JFrame{
         pwLabel.setBounds(505, 330,  300, 50);
         pwField.setBounds(500, 365,  300, 50);
         loginButton.setBounds(500, 470, 300, 50);
+        loginbtnColor.setBounds(502,470,296,50);
+        signupButton.setBounds(500,540, 300, 50);
+
+        //style
+        Border border = BorderFactory.createLineBorder(Color.decode("#e2e2e2"), 1);
+        topbar.setBorder(border);
+        title.setFont(new Font("로그인", Font.PLAIN, 23));
+        loginButton.setForeground(Color.white);
+        loginButton.setOpaque(false);
+        loginButton.setContentAreaFilled(false);
+        loginButton.setBorderPainted(false);
+        loginbtnColor.setBackground(Color.decode("#4b74ff"));
+        loginbtnColor.setOpaque(true);
+
+        signupButton.setForeground(Color.decode("#4b74ff"));
+
 
         background.setBackground(Color.WHITE);
         background.setOpaque(true);
-        title.setFont(new Font("로그인", Font.PLAIN, 23));
-        loginButton.setBackground(Color.decode("#4b74ff"));
-        loginButton.setForeground(Color.decode("#4b74ff"));
-        Border border = BorderFactory.createLineBorder(Color.decode("#e2e2e2"), 1);
-        topbar.setBorder(border);
-
-
-
 
 
 
@@ -127,6 +137,18 @@ public class Login extends JFrame{
             }
         });
 
+        signupButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create("http://varoon.s3-website.ap-northeast-2.amazonaws.com/loginManager"));
+                }
+                catch (java.io.IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        });
+
         jPanel.add(logo);
         jPanel.add(topbar);
         jPanel.add(title);
@@ -135,9 +157,13 @@ public class Login extends JFrame{
         jPanel.add(pwLabel);
         jPanel.add(pwField);
         jPanel.add(loginButton);
+        jPanel.add(loginbtnColor);
+        jPanel.add(signupButton);
         jPanel.add(background);
 
         add(jPanel);
+
+        setVisible(true);
     }
 
     public void setMain(Controller controller){
