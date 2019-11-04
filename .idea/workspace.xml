@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec99fe1-4d6c-4393-b8c0-47652b556c26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Image/game1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/game2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/game3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/youtube.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Login$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/varoon-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/varoon-client/Main.class" afterDir="false" />
@@ -97,7 +96,7 @@
       <workItem from="1572776192942" duration="139000" />
       <workItem from="1572776525390" duration="13450000" />
       <workItem from="1572797699032" duration="24000" />
-      <workItem from="1572797735411" duration="18202000" />
+      <workItem from="1572797735411" duration="20383000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,3 @@
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -56,7 +55,6 @@ public class Login extends JFrame{
         JPasswordField pwField = new JPasswordField(10);
         pwField.setMaximumSize(idField.getPreferredSize());
         JButton loginButton = new JButton("로그인");
-        JLabel loginbtnColor = new JLabel("");
         JButton signupButton = new JButton("회원가입");
 
         //set position & size
@@ -64,26 +62,29 @@ public class Login extends JFrame{
         logo.setBounds(585, 15, 120, 27);
         topbar.setBounds(-2,-1,1305,60);
         title.setBounds(618, 150,  300, 50);
-        idLabel.setBounds(505, 245,  300, 50);
-        idField.setBounds(500, 280,  300, 50);
-        pwLabel.setBounds(505, 330,  300, 50);
-        pwField.setBounds(500, 365,  300, 50);
-        loginButton.setBounds(500, 470, 300, 50);
-        loginbtnColor.setBounds(502,470,296,50);
-        signupButton.setBounds(500,540, 300, 50);
+        idLabel.setBounds(500, 225,  300, 50);
+        idField.setBounds(500, 260,  300, 50);
+        pwLabel.setBounds(500, 310,  300, 50);
+        pwField.setBounds(500, 345,  300, 50);
+        loginButton.setBounds(500, 450, 300, 50);
+        signupButton.setBounds(500,520, 300, 50);
 
         //style
         Border border = BorderFactory.createLineBorder(Color.decode("#e2e2e2"), 1);
         topbar.setBorder(border);
-        title.setFont(new Font("로그인", Font.PLAIN, 23));
+        title.setFont(new Font("나눔바른고딕", Font.PLAIN, 23));
+        idLabel.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
+        pwLabel.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
+        Border border2 = BorderFactory.createLineBorder(Color.decode("#4b74ff"), 1);
+        signupButton.setBorder(border2);
         loginButton.setForeground(Color.white);
-        loginButton.setOpaque(false);
-        loginButton.setContentAreaFilled(false);
-        loginButton.setBorderPainted(false);
-        loginbtnColor.setBackground(Color.decode("#4b74ff"));
-        loginbtnColor.setOpaque(true);
+        loginButton.setBackground(Color.decode("#4b74ff"));
+        loginButton.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
 
+        signupButton.setBorder(border2);
         signupButton.setForeground(Color.decode("#4b74ff"));
+        signupButton.setBackground(Color.white);
+        signupButton.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
 
 
         background.setBackground(Color.WHITE);
@@ -157,7 +158,6 @@ public class Login extends JFrame{
         jPanel.add(pwLabel);
         jPanel.add(pwField);
         jPanel.add(loginButton);
-        jPanel.add(loginbtnColor);
         jPanel.add(signupButton);
         jPanel.add(background);
 

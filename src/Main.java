@@ -17,6 +17,7 @@ public class Main extends JFrame {
         setSize(1300, 731);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setIconImage(new ImageIcon("Image/icon.png").getImage());
         setLocationRelativeTo(null);
 
         //panel
@@ -34,7 +35,9 @@ public class Main extends JFrame {
 
         JLabel leftMenu = new JLabel("");
         JLabel topbar = new JLabel("");
-        JLabel welcome = new JLabel("안녕하세요, "+name+"님");
+        String template = "<html>안녕하세요, <b>%s</b>님</html>";
+        String text = String.format(template, name);
+        JLabel welcome = new JLabel(text);
 
         JLabel menuTitle = new JLabel("<html><font color='#bcbcbc'>M E N U</font></html>");
         JLabel homeacc = new JLabel("");
@@ -98,20 +101,22 @@ public class Main extends JFrame {
         leftMenu.setBorder(border);
         leftMenu.setBackground(Color.decode("#fcfcfc"));
         leftMenu.setOpaque(true);
-        welcome.setFont(new Font("안녕하세요", Font.PLAIN, 23));
+        welcome.setFont(new Font("나눔바른고딕", Font.PLAIN, 23));
         homeacc.setBackground(Color.decode("#4b74ff"));
         homeacc.setOpaque(true);
 
-        menuTitle.setFont(new Font("메뉴", Font.PLAIN, 18));
-        home.setFont(new Font("홈", Font.PLAIN, 15));
+        menuTitle.setFont(new Font("나눔바른고딕", Font.PLAIN, 18));
+        home.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
         mesureBtn.setBorderPainted(false);
         mesureBtn.setHorizontalAlignment(SwingConstants.LEFT);
-        mesureBtn.setFont(new Font("측정", Font.PLAIN, 15));
+        mesureBtn.setContentAreaFilled(false);
+        mesureBtn.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
         resultBtn.setBorderPainted(false);
-        resultBtn.setFont(new Font("결과 확인", Font.PLAIN, 15));
+        resultBtn.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
+        resultBtn.setContentAreaFilled(false);
         resultBtn.setHorizontalAlignment(SwingConstants.LEFT);
 
-        contents.setFont(new Font("컨텐츠 목록", Font.PLAIN, 15));
+        contents.setFont(new Font("나눔바른고딕", Font.PLAIN, 15));
         fruitcuttingBtn.setBorderPainted(false);
         fruitcuttingBtn.setContentAreaFilled(false);
         fruitcuttingBtn.setOpaque(false);
@@ -181,7 +186,7 @@ public class Main extends JFrame {
                         cmd = new String("open "+"/Applications/Calculator.app "+ token);
                     }
                     else if(osName.toLowerCase().startsWith("window")){
-                        cmd = new String("\"과일썰기 주소\" "+ token);
+                        cmd = new String("\"C:\\Program Files (x86)\\Kakao\\KakaoTalk\\KakaoTalk.exe\" "+ token);
                     }
                     process = Runtime.getRuntime().exec(cmd);
                 } catch (IOException e){
@@ -265,4 +270,3 @@ public class Main extends JFrame {
         setVisible(true);
     }
 }
-
